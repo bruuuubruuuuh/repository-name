@@ -8,6 +8,10 @@ import (
 func main() {
 	var number int
 	fmt.Fscan(os.Stdin, &number)
+	for number >= 12307 {
+		fmt.Println("f u")
+		break
+	}
 	for number < 12307 {
 		if number < 0 {
 			number = number * (-1)
@@ -20,15 +24,13 @@ func main() {
 			number = 3 * (number + 2)
 		}
 		if (number%9 == 0) && (number%13 == 0) {
-			fmt.Printf("service error")
+			fmt.Printf("service error; ")
 			break
 		} else {
 			number = number + 1
 		}
-		fmt.Println("ur numba ", number)
 
 	}
-	for number >= 12307 {
-		fmt.Println("f u")
-	}
+	fmt.Println("ur finallll numba ", number)
+
 }
